@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "generador-operaciones"
+dynamic = ["version"]
+description = "Generador de operaciones aritméticas con colores posicionales, para proyectar en talleres"
+readme = "README.md"
+authors = [{ name = "Benny Ronaldo Rojas Villadeza" }]
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.10"
+dependencies = ["customtkinter>=5.2"]
+
+[project.urls]
+Homepage = "https://github.com/begsbenny/generador-operaciones"
+Repository = "https://github.com/begsbenny/generador-operaciones"
+Issues = "https://github.com/begsbenny/generador-operaciones/issues"
+Changelog = "https://github.com/begsbenny/generador-operaciones/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pyinstaller>=6"]
+
+[project.gui-scripts]
+operaciones = "operaciones.__main__:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "operaciones.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+operaciones = ["assets/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
