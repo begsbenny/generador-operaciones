@@ -6,6 +6,15 @@ Se creó y utilizó en un taller de cálculo con personas adultas sin educación
 
 ![Generador de Operaciones con colores posicionales y resultado oculto](docs/captura.png)
 
+## Descarga (Windows)
+
+Si solo quieres usar el programa sin instalar Python:
+
+1. Descarga el archivo `.zip` desde la [última versión en Releases](https://github.com/begsbenny/generador-operaciones/releases/latest).
+2. Descomprime la carpeta `GeneradorOperaciones` y abre `GeneradorOperaciones.exe` (mantén todos los archivos juntos dentro de la misma carpeta).
+
+> **Nota:** Windows SmartScreen puede mostrar un aviso porque el ejecutable no tiene firma digital. Pulsa **Más información** y luego **Ejecutar de todas formas**.
+
 ## Uso
 
 - **Cifras (arriba / abajo):** cuántas cifras tiene cada número (por defecto, 2 y 2). Un número de una cifra puede ser 0.
